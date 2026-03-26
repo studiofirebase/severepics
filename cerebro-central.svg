@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Cerebro Central</title>
+  <desc id="desc">Anel azul translúcido com movimento contínuo e centro transparente.</desc>
+  <defs>
+    <linearGradient id="ring-primary" x1="26" y1="20" x2="136" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0FBFF"/>
+      <stop offset="0.22" stop-color="#A5F3FC"/>
+      <stop offset="0.46" stop-color="#38BDF8"/>
+      <stop offset="0.72" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#D6F4FF"/>
+    </linearGradient>
+    <linearGradient id="ring-secondary" x1="138" y1="24" x2="18" y2="136" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFF6FF"/>
+      <stop offset="0.3" stop-color="#7DD3FC"/>
+      <stop offset="0.62" stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <filter id="ring-halo" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5.4"/>
+    </filter>
+    <filter id="ring-soft" x="-55%" y="-55%" width="210%" height="210%">
+      <feGaussianBlur stdDeviation="2.1"/>
+    </filter>
+  </defs>
+
+  <g opacity="0.54" filter="url(#ring-halo)">
+    <circle
+      cx="80"
+      cy="80"
+      r="53"
+      stroke="url(#ring-primary)"
+      stroke-width="14"
+      stroke-linecap="round"
+      stroke-dasharray="238 95"
+    >
+      <animateTransform attributeName="transform" type="rotate" from="0 80 80" to="360 80 80" dur="4.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="0;-330" dur="4.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g opacity="0.92">
+    <circle
+      cx="80"
+      cy="80"
+      r="53"
+      stroke="url(#ring-primary)"
+      stroke-width="11.5"
+      stroke-linecap="round"
+      stroke-dasharray="228 105"
+    >
+      <animateTransform attributeName="transform" type="rotate" from="0 80 80" to="360 80 80" dur="4.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="0;-330" dur="4.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g opacity="0.88" filter="url(#ring-soft)">
+    <circle
+      cx="80"
+      cy="80"
+      r="53"
+      stroke="url(#ring-secondary)"
+      stroke-width="6.5"
+      stroke-linecap="round"
+      stroke-dasharray="92 42 56 148"
+    >
+      <animateTransform attributeName="transform" type="rotate" from="360 80 80" to="0 80 80" dur="7.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="0;240" dur="5.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <circle
+    cx="80"
+    cy="80"
+    r="60.5"
+    stroke="url(#ring-secondary)"
+    stroke-width="2.2"
+    stroke-linecap="round"
+    stroke-dasharray="18 14"
+    opacity="0.45"
+  >
+    <animateTransform attributeName="transform" type="rotate" from="0 80 80" to="-360 80 80" dur="18s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle
+    cx="80"
+    cy="80"
+    r="46"
+    stroke="#E0F2FE"
+    stroke-opacity="0.28"
+    stroke-width="1.5"
+    stroke-dasharray="6 16"
+  >
+    <animateTransform attributeName="transform" type="rotate" from="360 80 80" to="0 80 80" dur="14s" repeatCount="indefinite"/>
+  </circle>
+</svg>
